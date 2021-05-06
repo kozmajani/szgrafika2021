@@ -70,7 +70,7 @@ void init_entities(World* world) {
 	
 	// house1
 	load_model("models//house1.obj", &world->house1.model);
-	world->house1.texture = load_texture("textures//ht2.png");
+	world->house1.texture = load_texture("textures//htt.png");
 	init_object(&world->house1, 10, 20, 0.06);
 					//jobb-bal,  előre-hátra, fel-le
 

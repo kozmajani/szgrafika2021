@@ -254,7 +254,7 @@ void update_camera_position(struct Camera* camera, double elapsed_time)
 	if (action.move_object == TRUE) {
 		move_object(&world);
 	}
-    //
+    
 	if (action.lampOff == TRUE) {
         light_ambient[0] = light_ambient[1] = light_ambient[2] = 0.00;
         glLightfv(GL_LIGHT1, GL_AMBIENT, light_ambient);
@@ -264,7 +264,7 @@ void update_camera_position(struct Camera* camera, double elapsed_time)
         light_ambient[0] = light_ambient[1] = light_ambient[2] = 0.70;
         glLightfv(GL_LIGHT1, GL_AMBIENT, light_ambient);
 	}
-	//
+	
 }
 
 void move_object(World* world) {
