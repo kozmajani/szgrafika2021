@@ -281,14 +281,14 @@ void move_object(World* world) {
 		}
 	}
 
-	if(abs(camera.position.x) < 170 && abs(camera.position.z) < 170)
+	if(abs(camera.position.x) < 80 && abs(camera.position.z) < 80)
 	{
 		switch (movingWhichObject) {
 			case 1:
 				if (abs((int)(camera.position.x - world->house1.position.x)) < 50 && abs((int)(camera.position.z - world->house1.position.z)) < 50 && camera.position.y < 150)
 				{
-					world->house1.position.x = camera.position.x + 10;
-					world->house1.position.z = camera.position.z + 10;
+					world->house1.position.x = camera.position.x + 7;
+					world->house1.position.z = camera.position.z + 7;
 
 					world->house1.material_ambient[0] = camera.position.x / 200;
 					world->house1.material_ambient[1] = camera.position.y / 200;
@@ -299,8 +299,8 @@ void move_object(World* world) {
 			case 2:
 				if (abs((int)(camera.position.x - world->house2.position.x)) < 50 && abs((int)(camera.position.z - world->house2.position.z)) < 50 && camera.position.y < 150)
 				{
-					world->house2.position.x = camera.position.x + 10;
-					world->house2.position.z = camera.position.z + 10;
+					world->house2.position.x = camera.position.x + 7;
+					world->house2.position.z = camera.position.z + 7;
 
 					world->house2.material_ambient[0] = camera.position.x / 200;
 					world->house2.material_ambient[1] = camera.position.y / 200;
